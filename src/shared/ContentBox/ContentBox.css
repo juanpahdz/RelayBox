@@ -1,0 +1,73 @@
+.content_box{
+    margin: auto;
+    height: calc(100vh - 80px);
+    padding: 40px 0;
+}
+
+.app_header {
+    width: 100%;
+    display: flex;
+
+}
+
+.app_header .search_bar{
+    
+}
+
+.app_header .add_new_video{
+    margin-left: auto;
+}
+
+.btn{
+    padding: 12px 25px;
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.btn .item_icon{
+margin-right: 10px;
+}
+
+.btn.btn_primary{
+    color: white;
+    background-image: linear-gradient(to right, #f25f5c, #63adf2);
+}
+
+.btn.btn_primary:hover{
+    background-image: linear-gradient(to right, #cc4d4b, #4c85bb);
+}
+.search_bar{
+    display: flex;
+    align-items: center;
+}
+.search_bar input{
+    padding: 12px 48px;
+    border: none;
+    color: #1c1c1c;
+    background: #E3E3E3;
+    border-radius: 10px;
+    font-family: Nunito;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.search_bar input::placeholder{
+    color: #808080;
+    font-family: Nunito;
+    font-weight: bold;
+    position: relative;
+    top: 2px;
+}
+
+.search_bar input:focus{
+    outline: none !important;
+}
+
+.input_icon{
+    position:absolute;
+    padding: 18px;
+}

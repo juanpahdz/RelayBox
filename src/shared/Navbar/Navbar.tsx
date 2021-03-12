@@ -4,7 +4,15 @@ import './Navbar.css'
 import imgs from '../../assets/imgs'
 
 
+
+
+
 const Navbar = () => {
+
+    const handleCloseButton = () =>{
+
+    }
+
     return (
         <header>
             <div className="navbar navbar_container">
