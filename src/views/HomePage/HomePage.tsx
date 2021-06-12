@@ -1,7 +1,7 @@
 import React from 'react'
 import { isConstructorDeclaration } from 'typescript'
 import './HomePage.css'
-
+import VideoCard from '../../shared/VideoCard/VideoCard'
 import imgs from '../../assets/imgs'
 
 const HomePage = () => {
@@ -18,32 +18,30 @@ const HomePage = () => {
                     <button className="btn btn_primary"><img className="item_icon" src={imgs.add_new_video_white} />Add New Video</button>
                 </div>
             </div>
-
-            <div className="videos_deck">
-                <div className="video_card">
-                    <div className="poster">
-                        <div className="overlay">
-                        </div>
-                        <img src="" alt=""/>
-                    </div>
-                    <div className="video_description">
-                        <div className="profile_image">
-                            <div className="img_box">
-                                <img src={imgs.profile} alt=""/>
-                            </div>
-                        </div>
-                        <div className="extra_content">
-                            <div className="video_title">
-                                <h5>How to make best Thumnails Ever</h5>
-                            </div>
-                            <div className="video_auxiliar">
-                                <div className="nickname">@michaelmooreedit</div>
-                                <div className="settings">Post Settings</div>
-                            </div>
-                        </div>
-                    </div>
+            <div className="filters">
+                <div className="title">
+                    <h3>Last Videos Added</h3>
                 </div>
             </div>
+            <div className="videos_deck">
+                <VideoCard 
+                    key={123} 
+                    title="How to make best Thumnails Ever"
+                    linkMiniatura={imgs.Miniatura} 
+                    linkProfile={imgs.profile} 
+                    nickname="michaelmooreedit"
+                />
+
+                <VideoCard 
+                    key={123} 
+                    title="How to make best Thumnails Ever"
+                    linkMiniatura={imgs.Miniatura} 
+                    linkProfile={imgs.profile} 
+                    nickname="michaelmooreedit"
+                />
+             
+                
+              </div>
         </div>
     )
 }

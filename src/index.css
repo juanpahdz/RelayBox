@@ -7,6 +7,10 @@
   --white-color:#F1FFFA
 }
 
+:focus {
+  outline: unset;
+}
+
 *{
   font-family: 'Nunito', sans-serif;
   margin: 0;
@@ -20,4 +24,13 @@
 
 .no_decoration {
   text-decoration: none;
+}
+
+.primary_color{
+  color:var(--primary-color)
+}
+
+.underlined:hover{
+  text-decoration: underline;
+  cursor: pointer;
 }

@@ -1,0 +1,19 @@
+.message{
+    margin-bottom: 25px;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.forgot_pass{
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.login_form .btn.btn_primary{
+    width: 100% ;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 18px;
+}
+

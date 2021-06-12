@@ -1,0 +1,115 @@
+.auth_box{
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    background-color: var(--primary-color);
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+.auth_box .content_box{
+    background-color: white;
+    height: 80vh;
+    width: 90%;
+    max-width: 1180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-box-shadow: 2px 19px 58px -30px rgba(105,104,105,0.51);
+    -moz-box-shadow: 2px 19px 58px -30px rgba(105,104,105,0.51);
+    box-shadow: 2px 19px 58px -30px rgba(105, 104, 105, 0.829);
+}
+
+.auth_box .content_box .baner{
+    width: 35%;
+    height: 100%;
+    position: relative;
+}
+
+.auth_box .content_box .baner img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.auth_box .content_box .content{
+    width: 65%;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.auth_box .content_box .content h2{
+    font-size: 56px;
+    color: var(--primary-color);
+    margin-bottom: -5px;
+}
+
+.auth_box .content_box .content .intro{ 
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--black-color);
+    font-family: 'nunito';
+}
+
+.btn{
+    padding: 12px 25px;
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: .3s;
+    height: 100%;
+}
+
+.btn.btn_primary{
+    color: white;
+    background-image: linear-gradient(to right, #f25f5c, #63adf2);
+}
+
+.btn.btn_primary:hover{
+    background-image: linear-gradient(to right, #cc4d4b, #4c85bb);
+}
+
+form.register_form, form.login_form{
+    margin-top: 10px;
+    width: 100%;
+    max-width: 350px;
+  }
+  
+  form.register_form label{
+    font-size: 16px;
+    font-family: 'nunito';
+    font-weight: 600;
+    color: var(--black-color);
+  }
+  
+  input.relay_input{
+    padding: 0 20px;
+    line-height: 38px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 0.6px solid var(--primary-color);
+    background: #F5F5F5;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    font-size: 16px ;
+    font-weight: 600;
+    color:var(--black-color)
+  }
+
+  input.relay_input::placeholder{
+    font-size: 16px ;
+    font-weight: 600;
+    color: #BAB1B1;
+  }
+  
+  input.relay_input:focus{
+    border: 2px solid #F25F5C;
+    transition: 0.1s;
+  }

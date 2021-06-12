@@ -5,7 +5,9 @@ import get_profile_qr_white from './svg/Get_Profile_QR_White.svg';
 import notifications_white from './svg/Notifications_White.svg';
 import add_new_video_white from './svg/Add_New_Video_White.svg';
 import log_out_white from './svg/Log_Out_White.svg';
-import search_icon from './svg/search_icon.svg'
+import search_icon from './svg/search_icon.svg';
+import Miniatura from './img/Miniatural.jpg';
+import login from './img/login_baner.jpg';
 
 export default
     {
@@ -17,4 +19,6 @@ export default
         "add_new_video_white":add_new_video_white,
         "log_out_white":log_out_white,
         "search_icon":search_icon,
+        "Miniatura":Miniatura,
+        "login":login,
     }

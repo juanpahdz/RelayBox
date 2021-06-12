@@ -1,18 +1,20 @@
 import React from 'react'
 import './ContentBox.css'
 
-interface MyProps{}
+interface Props{}
 
-const ContentBox : React.FunctionComponent<MyProps> = props => {
-    const width = 515
+const ContentBox : React.FunctionComponent<Props> = props => {
+    const width = 200
     const box_style ={
         width: `calc(100% - ${width}px)`    
     }
 
 
     return (
-        <div className="content_box" style={box_style}>
-            {props.children}
+        <div className="white_space">
+            <div className="content_box" style={box_style}>
+                {props.children}
+            </div>
         </div>
     )
 }

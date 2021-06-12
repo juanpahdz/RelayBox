@@ -1,0 +1,13 @@
+.filters{
+    margin-top: 40px;
+}
+
+.filters .title h3{
+    font-size: 1.5em;
+}
+
+.videos_deck{
+    margin-top: 40px;
+    display: flex;
+    flex-flow: wrap;
+}

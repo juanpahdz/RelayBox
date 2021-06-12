@@ -1,6 +1,27 @@
+
+.white_space{
+    width: calc(100% - 395px);
+    height: calc(100vh);
+    overflow-y: auto;
+}
+
+.white_space::-webkit-scrollbar {
+    width: 10px;
+    margin-right: 10px;
+}
+
+.white_space::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 10px 10px rgba(0, 128, 0, 0);
+    border: solid 3px transparent;
+}
+
+.white_space::-webkit-scrollbar-thumb {
+    background: linear-gradient(to bottom, var(--primary-color), var(--secundary-color));
+    border-radius: 10px;
+}
+
 .content_box{
     margin: auto;
-    height: calc(100vh - 80px);
     padding: 40px 0;
 }
 
@@ -11,7 +32,7 @@
 }
 
 .app_header .search_bar{
-    
+    position: relative
 }
 
 .app_header .add_new_video{
@@ -26,6 +47,7 @@
     align-items: center;
     cursor: pointer;
     transition: .3s;
+    height: 100%;
 }
 
 .btn .item_icon{
